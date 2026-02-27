@@ -10,10 +10,11 @@
     
     <!-- Checking if JS, img, and CSS are disabled by user -->
     <noscript>
+        <img src="https://collector.napresto.site/collect?js=false&url=index.html" width="1" height="1" style="display:none">
         <p>Your browser indicates that you have JavaScript disabled, but this site requires JavaScript to function!</p>
     </noscript>
-    <!-- If img is allowed, then this image will fire `onload` to set window._imagesEnabled to true -->
-    <img src="/public_html/assets/ai-toaster.png" onload="window._imagesEnabled=true" style="display:none">
+    <!-- If img is allowed, then this 1x1 gif will fire `onload` to set window._imagesEnabled to true -->
+    <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" onload="window._imagesEnabled=true" style="display:none">
     <!-- If CSS is allowed, the div that starts as display:none will be overrided to display:block when the CSS stylesheet is loaded -->
     <div id="_css_test" style="display:none"></div>
     <script>
