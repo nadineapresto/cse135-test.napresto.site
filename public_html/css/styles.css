@@ -1,3 +1,9 @@
+/* Checking for CSS allowance: this invisible div will be overrided to 
+   display:block if the stylesheet is loaded*/
+#_css_test { 
+    display: block; 
+}
+
 * {
     margin: 0 !important;
     padding: 0 !important;
