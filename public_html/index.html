@@ -15,13 +15,6 @@
     </noscript>
     <!-- If img is allowed, then this 1x1 gif will fire `onload` to set window._imagesEnabled to true -->
     <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" onload="window._imagesEnabled=true" style="display:none">
-    <!-- If CSS is allowed, the div that starts as display:none will be overrided to display:block when the CSS stylesheet is loaded -->
-    <div id="_css_test" style="display:none"></div>
-    <script>
-        window._cssEnabled = window.getComputedStyle(
-            document.getElementById('_css_test')
-        ).display === 'block';
-    </script>
 </head>
 <body>
     <header>
@@ -168,4 +161,11 @@
     </script>
     <script src="js/wreckage-upgrade.js"></script>
 </body>
+    <!-- If CSS is allowed, the div that starts as display:none will be overrided to display:block when the CSS stylesheet is loaded -->
+    <div id="_css_test" style="display:none"></div>
+    <script>
+        window._cssEnabled = window.getComputedStyle(
+            document.getElementById('_css_test')
+        ).display === 'block';
+    </script>
 </html>
